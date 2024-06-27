@@ -1,29 +1,29 @@
-// import React, { useState, useEffect } from "react";
-// import "./App.css";
-// import "@aws-amplify/ui-react/styles.css";
-// import {
-//   Button,
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import "@aws-amplify/ui-react/styles.css";
+import {
+     Button,
 //   Flex,
-//   Heading,
+     Heading,
 //   Text,
 //   TextField,
 //   View,
-//   withAuthenticator,
-//   Image,
-// } from "@aws-amplify/ui-react";
-// import { listNotes } from "./graphql/queries";
-// import {
-//   createNote as createNoteMutation,
-//   deleteNote as deleteNoteMutation,
-// } from "./graphql/mutations";
-// import { API, Storage } from "aws-amplify";
+     withAuthenticator,
+     Image,
+} from "@aws-amplify/ui-react";
+import { listNotes } from "./graphql/queries";
+import {
+  createNote as createNoteMutation,
+  deleteNote as deleteNoteMutation,
+} from "./graphql/mutations";
+import { API, Storage } from "aws-amplify";
 
 // const App = ({ signOut }) => {
 //   const [notes, setNotes] = useState([]);
 
 //   useEffect(() => {
 //     fetchNotes();
-//   }, []);
+//    }, []);
 
 //   async function fetchNotes() {
 //     const apiData = await API.graphql({ query: listNotes });
@@ -129,29 +129,6 @@
 //       <Button onClick={signOut}>Sign Out</Button>
 //     </View>
 //   );
-// };
+//};
 
-// export default withAuthenticator(App);
-
-
-
-
-
-
-
-
-import logo from './logo.svg';
-import './App.css';
-
-function App()
-{
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1> Hello </h1>
-      </header>
-    </div>
-  );
-}
-export default App;
+export default withAuthenticator(App);
